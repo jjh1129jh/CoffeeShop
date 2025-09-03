@@ -103,7 +103,7 @@ function Cart(props) {
                                     // 할인이 하나라도 있는상태 스페셜메뉴는 스페셜할인까지 적용시켜 표시한다.
                                     : <td style={{position:'relative'}}> 
                                         <p>{(item.count * (item.price * discount * specialdiscount)).toLocaleString()}</p>
-                                        <p style={{position:'absolute',top:'72px',right:'20px',color:'red',fontSize:'14px'}}>-{((item.count * (item.price))-(item.count * (item.price * discount * specialdiscount))).toLocaleString()}</p>
+                                        <p className="redText" style={{position:'absolute',top:'72px',right:'20px',color:'red',fontSize:'14px'}}>-{((item.count * (item.price))-(item.count * (item.price * discount * specialdiscount))).toLocaleString()}</p>
                                       </td>
                                     )
                                   : //아니다 이번에 추가 된 메뉴는 스페셜 메뉴가 아니다.
@@ -113,7 +113,7 @@ function Cart(props) {
                                     // 할인이 하나라도 있는상태
                                     : <td style={{position:'relative'}}>
                                         <p>{(item.count * (item.price * discount)).toLocaleString()}</p>
-                                        <p style={{position:'absolute',top:'72px',right:'20px',color:'red',fontSize:'14px'}}>-{((item.count * (item.price))-(item.count * (item.price * discount))).toLocaleString()}</p>
+                                        <p className="redText" style={{position:'absolute',top:'72px',right:'20px',color:'red',fontSize:'14px'}}>-{((item.count * (item.price))-(item.count * (item.price * discount))).toLocaleString()}</p>
                                       </td>
                                     )
                                   
