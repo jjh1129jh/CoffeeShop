@@ -76,7 +76,7 @@ function Cart(props) {
                     ?   quantity.map(function (item, i) {
                             return(
                             <tr key={i}>
-                              <td style={{backgroundImage:`url(./CoffeeShop/img/coffee_${item.id+1}.png`, backgroundRepeat: "no-repeat", backgroundPosition: "center",backgroundSize:"100%",width:"100px",height:"100px"}}></td>
+                              <td style={{backgroundImage:`url(https://jjh1129jh.github.io/CoffeeShop/img/coffee_${item.id+1}.png`, backgroundRepeat: "no-repeat", backgroundPosition: "center",backgroundSize:"100%",width:"100px",height:"100px"}}></td>
                               {/* 스타일을 길게 풀어쓴 이유? =  background는 shorthand뭐시기라는데 충돌이 일어날수있어서 longhand 속성으로 적으라함*/}
                               <td><p>{item.title}</p></td>
                               <td>
