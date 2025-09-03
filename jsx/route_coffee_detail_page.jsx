@@ -33,7 +33,7 @@ function CoffeeDetailPage(props) {
           ?  <div className='message'>
               <div className='message_bg'>
                 <div className='message_box'>
-                  <img className='message_cart' src="./img/cart.png" alt="장바구니" />
+                  <img className='message_cart' src="./CoffeeShop/img/cart.png" alt="장바구니" />
                   <p>장바구니에 상품을 담았습니다.</p>
                   <div className="massagebtnBox">
                     <button className='massagebtn' onClick={()=>{setGocart(0);setAddNum(0)}}>계속 쇼핑</button>
@@ -50,7 +50,7 @@ function CoffeeDetailPage(props) {
           <Card>
             <button className='prev' onClick={()=>{props.navigate('/order');props.setNavber(0)}}>{`< MENU`}</button>
             <button className='next' onClick={()=>{props.navigate('/cart');props.setNavber(0)}}>{`CART >`}</button>
-            <Card.Img variant="top" src={`./img/coffee_${props.orderlist[id].id + 1}.png`} />
+            <Card.Img variant="top" src={`./CoffeeShop/img/coffee_${props.orderlist[id].id + 1}.png`} />
             <Card.Body>
               <Card.Title>{props.orderlist[id].title}</Card.Title>
               <Card.Text>{props.orderlist[id].content}</Card.Text>
